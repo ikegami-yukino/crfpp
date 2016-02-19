@@ -117,9 +117,12 @@ Named Entity Recognition, Information Extraction and Text Chunking.
 
 ## Installation
 
+###Linux
+
 *   Requirements
 
     *   C++ compiler (gcc 3.0 or higher)
+
 *   How to make
 
         % ./configure
@@ -130,6 +133,16 @@ Named Entity Recognition, Information Extraction and Text Chunking.
     You can change default install path by using --prefix option of configure script.
     
     Try --help option for finding out other options.
+
+Compiling the Swig bindings requires that CRF++ first be installed. Run the Makefile in the `swig` directory, then follow the directions in the desired language directory (`java`, etc.).
+
+###Windows (MSVC++)
+
+1. Load environment variables via `C:/path/to/vcvars64`, etc. or open a VS tools command prompt; [see here](https://msdn.microsoft.com/en-us/library/f2ccy3wt.aspx)
+2. `nmake -f Makefile.msvc`
+3. rename libcrfpp.dll to crfpp.dll, and put it in the desired directory (or somewhere in the `%INCLUDE%` path for permanent installation).
+
+To make Swig bindings, first run the makefile in the `swig` directory with `nmake -f Makefile.win`. Then follow the directions in the desired language directory (`java`, etc.). Note that the only provided MSVC makefile is for Java.
 
 ## Usage
 
@@ -592,8 +605,8 @@ by simply seeing the difference between the 3rd and 4th columns.
 
  In each directory, please try the following commands
 
-    % crf_learn template train model
-    % crf_test  -m model test
+    % crf_learn template train.data model
+    % crf_test -m model test.data
 
 ## To Do
 
@@ -602,6 +615,10 @@ by simply seeing the difference between the 3rd and 4th columns.
 *   Support [
 	 piece-wise CRF](http://www.cs.umass.edu/~mccallum/papers/lcrf-nips2004.pdf)
 *   Provide useful C++/C API (Currently no APIs are available)
+*   Check/polish flags used in Java Makefile.msvc
+*   Create Makefil.msvc files for other Swig bindings
+*   Figure out proper directory structure to run Java test
+*   Add evaluation (F1, etc.) capabilities
 
 ## References
 
