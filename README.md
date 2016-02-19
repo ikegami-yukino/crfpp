@@ -9,21 +9,21 @@ Named Entity Recognition, Information Extraction and Text Chunking.
 
 ## Table of contents
 
-*   [Features]()
-*   [News]()
-*   [Download]()
-    * [Source]()
+*   [Features](#features)
+*   [News](#news)
+*   [Download](#download)
+    * [Source](#source)
     * [Binary package for MS-Windows]()
-*   [Installation]()
-*   [Usage]()
-    *   [Training and Test file formats]()
-    *   [Preparing feature templates]()
-    *   [Training (encoding)]()
-    *   [Testing (decoding)]()
-*   [Case studies]()
-*   [Useful Tips]()
-*   [To do]()
-*   [Links]()
+*   [Installation](#installation)
+*   [Usage](#usage)
+    *   [Training and Test file formats](#training-and-test-file-formats)
+    *   [Preparing feature templates](#preparing-feature-templates)
+    *   [Training (encoding)](#training-encoding)
+    *   [Testing (decoding)](#testing-decoding)
+*   [Case studies](#case-studies)
+*   [Useful Tips](#useful-tips)
+*   [To do](#to-do)
+*   [Links](#links)
 
 ## Features
 
